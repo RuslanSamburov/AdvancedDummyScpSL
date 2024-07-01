@@ -9,7 +9,7 @@
 # **Разрешения**
 
 - npc.create - Разрешает спавнить Npc
-- npc.remove - Рарзрешает удалять Npc
+- npc.remove - Разрешает удалять Npc
 
 # **Class Ids**
 
