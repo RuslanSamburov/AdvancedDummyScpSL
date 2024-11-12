@@ -27,6 +27,11 @@ namespace NpcScpSl.Commands.RemoteAdmin.NpcCommands
             {
                 response = "Заполните эти аргументы [id]";
                 return false;
+            } else if (arguments.At(0) == "all")
+            {
+                Npc.List.ForEach(x => x.Destroy());
+                response = "Все Npc удалены";
+                return true;
             }
 
             int playerId = Int32.Parse(arguments.At(0));
